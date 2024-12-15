@@ -1,8 +1,10 @@
 .desktop{
   background: teal;
   width: 100%;
-  height: 100vh;
+  height: 86vh;
   overflow: hidden;
+  border: solid;
+  
   
 }
 * {
@@ -12,4 +14,33 @@
 .title-bar{
   padding: 10px 9px 10px 10px !important;
   font-size: 19px  !important;
+  height: 3vh !important;
+}
+.footerNav{
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+  background: #C0C0C0;
+  padding: 3px;
+  border: solid;
+  border-color: gray;
+  margin: 0;
+  
+}
+.footerNav > button {
+  font-size: 19px !important;
+  font-weight: 800 !important;
+}
+.iconGrid {
+  background: none;
+  display: grid;
+  margin: 20px;
+  padding: 15px;
+  gap: 20px;
+}
+.trashGrid{
+  display: flex;
+  justify-content: right;
+  margin-top: 30vh;
+  margin-right: 40px;
 }

@@ -1,7 +1,11 @@
 import React from "react";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return <>
+  <section className="footerNav">
+  <button className="default"><span><img src="https://win98icons.alexmeub.com/icons/png/windows_slanted-1.png"></img>Start</span></button>
+  </section>
+  </>;
 };
 
 export default Footer;
