@@ -1,15 +1,24 @@
 .desktop{
   background: teal;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
-  border: solid;
+  width: 100%;
+  z-index: 1;
+  
   
   
 }
 * {
-  
   margin: 0px;
   padding: 0px;
+
+}
+#root{
+  background: teal;
+  
+  
 }
 @font-face {
   font-family: 'Modern DOS 8x16';
@@ -40,21 +49,33 @@
   font-size: 19px  !important;
   height: 3vh !important;
 }
+.StartMenu{
+  width: 30% !important;
+  display: flex !important;
+  justify-content: center !important;
+  z-index: 5;
+}
 .footerNav{
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  height: 5vh;
+  width: 95%;
+  height: 4em;
   background: #C0C0C0;
-  padding: 3px;
+  padding: 10px;
   border: solid;
   border-color: gray;
-  margin: 0;
-  position: sticky;
+  margin-top: 20px;
+  margin-right: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   
 }
 .footerNav > button {
   font-size: 19px !important;
   font-weight: 800 !important;
+  padding: 8px !important;
 }
 .iconGrid {
   margin-top: 10px;
@@ -64,6 +85,7 @@
   margin-left: 25px;
   padding: 15px;
   gap: 40px;
+  z-index: 1;
 }
 .icon {
 display: flex;
@@ -83,6 +105,7 @@ width: 30px;
 .trashGrid{
   display: flex;
   justify-content: right;
-  margin-top: 10vh;
+  margin-top: 5px;
   margin-right: 40px;
+  margin-bottom: 40px;
 }
