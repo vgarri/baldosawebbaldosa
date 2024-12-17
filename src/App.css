@@ -1,7 +1,11 @@
 .window {
   max-height: 5vh;
 }
-
+html{
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
 
 
 .desktop{
@@ -9,9 +13,9 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 95vh;
-  width: 100%;
+  height: 90vh;
   z-index: 1;
+  overflow: scroll;
   
   
   
@@ -131,20 +135,31 @@ width: 30px;
   margin-bottom: 40px;
 }
 .about{
-  height: 100vh;
+  height: 90vh;
   font-family: 'Modern DOS 8x16' !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: aliceblue;
+  overflow: scroll;
 }
 .profileImg{
   border-radius: 900px;
   max-width: 250px;
+  border: solid;
+  border-width: 3px;
 }
 .text {
   margin: 20px;
   padding: 10px;
   text-align: justify;
   color: aliceblue;
+}
+.parrafo {
+  font-size: 24px;
+  max-width: 550px;
+}
+.aboutTitle {
+  margin: 30px;
+  text-align: center;
 }
