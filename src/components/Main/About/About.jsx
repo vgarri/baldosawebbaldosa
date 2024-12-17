@@ -13,6 +13,10 @@ const About = () => {
   <section className="about">
   <h1>About me</h1>
   <img className="profileImg" src="https://avatars.githubusercontent.com/u/146452699?v=4"></img>
+  <article className="text">
+  <p>Hello! I'm Victor Garritano. I'm a Fullstack Developer, working really hard to hone my skills in both frontend and backend development. I love learning about new technologies and constantly improving my coding abilities. 🚀</p>
+
+  </article>
   </section>
   
   

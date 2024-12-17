@@ -28,7 +28,7 @@ const Footer = () => {
   return <>
     <section className="footer">
       <section className="footerNav">
-        <button className="default" onClick={handleClick}><span><img src="https://win98icons.alexmeub.com/icons/png/windows_slanted-1.png"></img>Start</span></button>
+        <button className="default" onClick={handleClick}><span className="span"><img src="https://win98icons.alexmeub.com/icons/png/windows_slanted-1.png"></img>Start</span></button>
         <button className="default" onClick={() => { navigate("/") }}>Home</button>
         <button className="default" onClick={() => { navigate("/about") }}>About</button>
 
