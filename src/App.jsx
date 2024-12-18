@@ -10,12 +10,18 @@ import { menuContext } from './context/menuContext';
 function App() {
 
   const [menuClick, setMenuClick] = useState(false);
+  const [homeClick, setHomeClick] = useState(false);
   const updateMenuClick = (newClick) => {
     setMenuClick(newClick)
   }
+  const updateHomeClick = (newest) => {
+    setHomeClick(newest)
+  }
   const menuClickState = {
     menuClick,
-    updateMenuClick
+    homeClick,
+    updateMenuClick,
+    updateHomeClick
   }
 
 
