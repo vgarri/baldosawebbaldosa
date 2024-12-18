@@ -1,5 +1,6 @@
 .window {
   max-height: 5vh;
+  
 }
 html{
   margin: 0px;
@@ -13,9 +14,9 @@ html{
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: 95vh;
   z-index: 1;
-  overflow: scroll;
+  overflow: show;
   
   
   
@@ -23,6 +24,7 @@ html{
 * {
   margin: 0px;
   padding: 0px;
+  font-family: 'Modern DOS 8x16' !important;
 
 }
 #root{
@@ -53,6 +55,7 @@ html{
     font-weight: normal;
     font-style: normal;
     color: aliceblue;
+    font-size: 45px;
 }
 .title-bar{
   padding: 10px 9px 10px 10px !important;
@@ -60,11 +63,16 @@ html{
   height: 3vh !important;
 }
 .StartMenu{
-  width: 30% !important;
+  width: 40% !important;
   display: flex !important;
-  position: sticky;
-  justify-content: center !important;
+  background: #C0C0C0;
+  
+  align-content: center !important;
   z-index: 5;
+  height: 30vh;
+  position: fixed;
+  left: 1px;
+  bottom: 8vh;
 }
 .footer{
   display: block;
@@ -86,9 +94,19 @@ html{
   z-index: 9;
   
 }
+.menuIcon {
+  display: flex;
+  justify-content: space-between;
+  height: 4vh;
+  margin: 10px;
+}
+.menuIcon:hover {
+ background-color: blue;
+ color: aliceblue;
+}
 .footerNav > button {
   font-size: 19px !important;
-  font-weight: 800 !important;
+  
   
   text-align: center !important;
   align-content: center;
@@ -104,7 +122,7 @@ html{
   background: none;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* see notes below */
-  grid-gap: 1em;
+  grid-gap: 0.5em;
 
   margin-left: 25px;
   padding: 15px;
@@ -135,17 +153,18 @@ width: 30px;
   margin-bottom: 40px;
 }
 .about{
-  height: 90vh;
+  height: 95vh;
   font-family: 'Modern DOS 8x16' !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: aliceblue;
-  overflow: scroll;
+  overflow: show;
 }
 .profileImg{
   border-radius: 900px;
   max-width: 250px;
+  
   border: solid;
   border-width: 3px;
 }
@@ -162,4 +181,83 @@ width: 30px;
 .aboutTitle {
   margin: 30px;
   text-align: center;
+}
+.menuDesplegable{
+  background: #C0C0C0;
+  width: auto;
+}
+.barraLateral{
+  background: linear-gradient(90deg, navy, #1084d0);
+
+  width: 16px;
+  margin: 3px;
+}
+.textoWindowsLateral{
+  margin: 2px;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 400px){
+  .iconGrid {
+    margin-top: 10px;
+    background: none;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* see notes below */
+    grid-gap: 0.5em;
+  
+    margin-left: 25px;
+    padding: 15px;
+    
+    z-index: 1;
+  }
+  .footerNav{
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 5vh;
+    background: #C0C0C0;
+    padding: 10px;
+    border: solid;
+    border-color: gray;
+    /* margin-top: 20px; */
+    margin-right: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    
+  }
+  .about{
+    height: 95vh;
+    font-family: 'Modern DOS 8x16' !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    overflow: show;
+  }
+  .profileImg{
+    border-radius: 900px;
+    max-width: 180px;
+    
+    border: solid;
+    border-width: 3px;
+  }
+  .text {
+    margin: 20px;
+    padding: 10px;
+    text-align: justify;
+    color: aliceblue;
+  }
+  .parrafo {
+    font-size: 14px;
+    max-width: 200px;
+  }
+  .aboutTitle {
+    margin: 30px;
+    text-align: center;
+  }
 }

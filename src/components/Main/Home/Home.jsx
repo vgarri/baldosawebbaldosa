@@ -18,20 +18,29 @@ const Home = () => {
     <section className="desktop">
       <article className="title"><h1>Portfolio</h1></article>
       {menuClick ? <> <section className="StartMenu">
-
-        <div className="window">
-          <div className="title-bar">
-            <div className="title-bar-text">A Window With Stuff In It</div>
-            <div className="title-bar-controls">
-              <button aria-label="Minimize"></button>
-              <button aria-label="Maximize"></button>
-              <button aria-label="Close"></button>
-            </div>
-          </div>
+      <article className="barraLateral"><span className="textoWindowsLateral">vgarri</span></article>
+          <section className="menuDesplegable">
+          
           <div className="window-body">
-            <p>There's so much room for activities!</p>
+            
+            <article className="menuIcon">
+            <img src="https://win98icons.alexmeub.com/icons/png/windows_update_large-1.png"></img><p>Update ‣</p>
+            </article>
+            <article className="menuIcon">
+            <img src="https://win98icons.alexmeub.com/icons/png/console_prompt-0.png"></img><p> Run ‣</p>
+            </article>
+            <article className="menuIcon">
+            <img src="https://win98icons.alexmeub.com/icons/png/help_book_cool-4.png"></img><p> Help ‣</p>
+            </article>
+            <article className="menuIcon">
+            <img src="https://win98icons.alexmeub.com/icons/png/shut_down_cool-5.png"></img><p> Reset ‣</p>
+            </article>
+           
+            
           </div>
-        </div>
+          </section>
+          
+        
 
 
       </section>

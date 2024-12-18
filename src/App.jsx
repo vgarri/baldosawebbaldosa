@@ -26,7 +26,7 @@ function App() {
   return <>
     <BrowserRouter>
     <menuContext.Provider value={menuClickState}>
-      <Header />
+      {/* <Header /> */}
       <Main />
       <Footer />
       </menuContext.Provider>

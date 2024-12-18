@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 
 const About = () => {
-
+  const [about, setAbout] = useState(false)
 
 
 
